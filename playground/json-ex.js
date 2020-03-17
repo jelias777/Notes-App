@@ -1,3 +1,5 @@
+const fs = require('fs')
+
 //Load and parse json data
 const dataBuffer = fs.readFileSync('file.json')
 const dataJSON = dataBuffer.toString()
