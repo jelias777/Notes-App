@@ -16,3 +16,7 @@ console.log(utils.getNotes())
 console.log(validator.isEmail('joelias@example.com'))
 
 console.log(chalk.green('Success !'))
+
+//process.argv  get the input from the user in console
+//process.argv[2] example of index 2, that is the first user input after node and app.js path
+console.log(process.argv[2])
