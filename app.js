@@ -34,4 +34,31 @@ yargs.command({
     }
 })
 
+//Create remove command
+yargs.command({
+    command: 'delete',
+    describe: 'Delete a note',
+    handler: () => {
+        console.log('Deleting a note')
+    }
+})
+
+//Create read command
+yargs.command({
+    command: 'read',
+    describe: 'Read a note',
+    handler: () => {
+        console.log('Reading a note')
+    }
+})
+
+//Create list command
+yargs.command({
+    command: 'list',
+    describe: 'List your nodes',
+    handler: () => {
+        console.log('Listing out all notes')
+    }
+})
+
 console.log(yargs.argv);
