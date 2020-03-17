@@ -18,6 +18,7 @@
   "homepage": "https://github.com/jelias777/Notes-App#readme",
   "dependencies": {
     "chalk": "^3.0.0",
-    "validator": "^12.2.0"
+    "validator": "^12.2.0",
+    "yargs": "^15.3.1"
   }
 }
