@@ -36,8 +36,8 @@ yargs.command({
             type: 'string'
         }
     },
-    handler: () => {
-        console.log('Adding a new note!')
+    handler: (argv) => {
+        console.log('Title: ' + argv.title)
     }
 })
 
@@ -68,4 +68,5 @@ yargs.command({
     }
 })
 
-console.log(yargs.argv);
+yargs.parse()
+//console.log(yargs.argv);
