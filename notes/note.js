@@ -1,4 +1,5 @@
 const fs = require('fs')
+const chalk = require('chalk')
 
 const getNotes = () => {
     return 'Your notes ...'
@@ -6,11 +7,22 @@ const getNotes = () => {
 
 const addNote = (title, body) => {
     const notes = loadNotes()
-
-    notes.push({
-        title: title,
-        body: body
+    const duplicateNotes = notes.filter((note) => {
+        return note.title === title
     })
+
+    if (duplicateNotes.length === 0) {
+        notes.push({
+            title: title,
+            body: body
+        })
+
+        saveNotes(notes)
+
+        console.log(chalk.green('New note added!'))
+    } else {
+        console.log(chalk.red('Note title duplicated, change the title of the note'))
+    }
 
     saveNotes(notes)
 }
