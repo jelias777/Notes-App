@@ -49,10 +49,10 @@ yargs.command({
 
 //Create list command
 yargs.command({
-    command: 'list',
+    command: 'listNotes',
     describe: 'List your nodes',
     handler: () => {
-        console.log('Listing out all notes')
+        notes.getNotes()
     }
 })
 

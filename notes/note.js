@@ -2,7 +2,15 @@ const fs = require('fs')
 const chalk = require('chalk')
 
 const getNotes = () => {
-    return 'Your notes ...'
+    const notes = loadNotes()
+    if(notes.length > 0) {
+        console.log('The titles of the notes saved are :')
+        notes.forEach(note => {
+            console.log(note.title)
+        });
+    } else {
+        console.log(chalk.red.inverse('The list of notes is empty'))
+    }
 }
 
 const addNote = (title, body) => {
