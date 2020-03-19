@@ -27,6 +27,21 @@ const addNote = (title, body) => {
     saveNotes(notes)
 }
 
+const deleteNote = (title) => {
+    const notes = loadNotes()
+    const notesToKeep = notes.filter((note) => {
+        return note.title !== title
+    })
+
+    if(notes.length !== notesToKeep.length) {
+        saveNotes(notesToKeep)
+        console.log(chalk.green.inverse('Note with ID: ' + title + ' was removed'))
+    } else {
+        console.log(chalk.red.inverse('A note with ID: ' + title + ' doesn´t exist'))
+    }
+
+}
+
 const saveNotes = (notes) => {
 
     const dataJSON = JSON.stringify(notes)
@@ -52,5 +67,6 @@ const loadNotes = () => {
 
 module.exports = {
     getNotes: getNotes,
-    addNote: addNote
+    addNote: addNote,
+    deleteNote: deleteNote
 }
