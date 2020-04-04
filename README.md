@@ -17,7 +17,7 @@ Node.js application, example of how to use file system module
 Install the dependencies before start:
 
 ```sh
-$ cd Notes-App
+$ cd notes-app
 $ sudo npm install
 ```
 
