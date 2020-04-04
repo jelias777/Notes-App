@@ -3,8 +3,8 @@ Node.js application, example of how to use file system module
 
 ## Requirements
 
-- node.js 12.16.x
-- npm 6.13.X
+- node.js 12.+
+- npm 6.+
 
 ## Dependencies
 
@@ -26,19 +26,19 @@ $ sudo npm install
 Add a note:
 
 ```sh
-$ node app.js add --title=<title-of-the-note> --body=<body-of-the-note>
+$ node app.js add --title="<title-of-the-note>" --body="<body-of-the-note>"
 ```
 
 Remove a note:
 
 ```sh
-$ node app.js remove --title=<title-of-the-note>
+$ node app.js remove --title="<title-of-the-note>"
 ```
 
 Read a note:
 
 ```sh
-$ node app.js read --title=<title-of-the-note>
+$ node app.js read --title="<title-of-the-note>"
 ```
 
 List all the notes:
