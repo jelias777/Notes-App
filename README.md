@@ -1,4 +1,4 @@
-# Notes-App
+# Notes Application
 Node.js application, example of how to use file system module
 
 ## Requirements
