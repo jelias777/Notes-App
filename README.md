@@ -3,8 +3,8 @@ Node.js application, example of how to use file system module
 
 ## Requirements
 
-- node.js 12.+
-- npm 6.+
+- node.js 12.*
+- npm 6.*
 
 ## Dependencies
 
@@ -17,7 +17,7 @@ Node.js application, example of how to use file system module
 Install the dependencies before start:
 
 ```sh
-$ cd notes-app
+$ cd node-filesystem
 $ sudo npm install
 ```
 
