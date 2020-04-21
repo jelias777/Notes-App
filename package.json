@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jelias777/Notes-App.git"
+    "url": "git+https://github.com/joelias71/node-filesystem"
   },
   "author": "Jorge Elias",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/jelias777/Notes-App/issues"
+    "url": "https://github.com/joelias71/node-filesystem/issues"
   },
-  "homepage": "https://github.com/jelias777/Notes-App#readme",
+  "homepage": "https://github.com/joelias71/node-filesystem#readme",
   "dependencies": {
     "chalk": "^3.0.0",
     "validator": "^12.2.0",
